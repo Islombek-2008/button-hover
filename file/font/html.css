@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: dimgrey;
+}
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: center; 
+}
+.novbar{
+ margin-top: 250px;
+}
+.shadows {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  font-family: sans-serif;
+  text-shadow: -15px 5px 20px #0db11b;
+  user-select: none;
+  color: bisque;
+  transition: all 0.25s ease-out;
+}
+.shadows:hover {
+  text-shadow: -15px 6px 15px #0db11b;
+  color: aquamarine;
+  margin-left: 100px;
+}

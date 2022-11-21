@@ -1,0 +1,44 @@
+body {
+  background-color: #fff;
+}
+.animation{
+  margin-top: 300px;
+  margin-left: 550px;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.loader::before,
+.loader::after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  animation: rotate 1s infinite cubic-bezier(0.75, 0.82, 0.165, 1);
+}
+.loader::before {
+  background-color: #ff0000;
+}
+.loader::after {
+  background-color: #1100ff;
+  animation-delay: .5s;
+}
+@keyframes rotate {
+  0%,
+  100% {
+    left: 90px;
+  }
+  25% {
+    transform: scale(.3);
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
